@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Cars</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Images/homeback.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Keep background fixed on scroll */
+      background-color: #222; /* Fallback background color */
+      color: #fff;
+      position: relative;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed; /* Fixed overlay to cover viewport */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .navbar {
+      background-color: rgba(20, 20, 20, 0.9);
+      overflow: hidden;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .container {
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .motivation {
+      font-size: 24px;
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .title {
+      font-size: 36px;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .car-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .car-card img {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .car-card:hover {
+      transform: scale(1.05);
+    }
+    .car-card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .car-card p {
+      font-size: 16px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="browseCars.html">Buy Cars</a> <!-- Updated to point to browseCars.html -->
+  <a href="sellCars.html">Sell Cars</a>
+  <a href="browseBikes.html">Buy Bikes</a>
+  <a href="sellBikes.html">Sell Bikes</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<div class="container">
+  <div class="motivation">Discover Your Dream Ride Today!</div>
+  <h2 class="title">Available Cars</h2>
+  <div class="car-grid">
+    <div class="car-card">
+      <img src="Images/car1.jpg" alt="Car 1">
+      <h3>Suzuki Boss</h3>
+      <p>Price: 12 Lakh</p>
+    </div>
+    <div class="car-card">
+      <img src="Images/car2.jpg" alt="Car 2">
+      <h3>Honda Civic</h3>
+      <p>Price: 60 Lakh</p>
+    </div>
+    <div class="car-card">
+      <img src="Images/car3.jpg" alt="Car 3">
+      <h3>Kala Dalla</h3>
+      <p>Price: 169 Lakh</p>
+    </div>
+    <div class="car-card">
+      <img src="Images/car4.jpg" alt="Car 4">
+      <h3>BMW M5</h3>
+      <p>Price: 4.5 Crore</p>
+    </div>
+    <div class="car-card">
+      <img src="Images/car5.jpg" alt="Car 5">
+      <h3>Toyota Corolla</h3>
+      <p>Price: 44 Lakh</p>
+    </div>
+    <div class="car-card">
+      <img src="Images/car6.jpg" alt="Car 6">
+      <h3>Mercedes C63</h3>
+      <p>Price: 3.7 Crore</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
